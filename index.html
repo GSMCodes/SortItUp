@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortItUp</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div></div>
+        <h1>SortItUp</h1>
+        <i id="toggleIcon" class="fa-regular fa-moon fa-sun"></i>
+    </header>
+
+    <main>
+        <div id="leftDiv" class="mainDivs">
+            <div id="canvasHolder" class="canvasHolder">
+                <canvas id="sortCanvas" width="700" height="400"></canvas>
+
+                <div class="controls">
+                    <button id="startButton" class="btn-primary">Start Sorting</button>
+                    <button id="resetButton" class="btn-secondary">Reset</button>
+                </div>
+            </div>
+
+            <div id="messageBox" class="message-box">Click "Start Sorting" to begin the visualization.</div>
+        </div>
+
+        <div id="rightDiv" class="mainDivs">
+            <div class="sortSelector">
+                <select name="sortSelector" id="sortName">
+                    <option value="Insertion Sort" selected>Insertion Sort</option>
+                    <option value="Selection Sort">Selection Sort</option>
+                    <option value="Quick Sort">Quick Sort</option>
+                    <option value="Merge Sort">Merge Sort</option>
+                    <option value="Bubble Sort">Bubble Sort</option>
+                </select>
+            </div>
+
+            <div class="algo" id="algoPreview">
+                <pre><code id="pseudocodeDisplay"></code></pre>
+            </div>
+
+            <div class="options" id="options">
+                <div class="numElementsInput">
+                    <label for="numElements">Elements:</label>
+                    <input type="number" id="numElements" value="10" min="5" max="50">
+                </div>
+
+                <div class="speedInput">
+                    <Label for="speed">Select speed:</Label>
+                    <select name="speed" id="speed">
+                        <option value="Slow">Slow</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="Fast">Fast</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

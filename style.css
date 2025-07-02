@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;          /* Make body a flex container */
+    flex-direction: column;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    background-color: #9b5151;
+    padding: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    color: aliceblue;
+    background-color:cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-family: "Space Mono", monospace;
+    font-size: 4vh;
+}
+
+header i{
+    font-size: 3vh;
+}
+
+header i:hover{
+    cursor:pointer;
+}
+
+main{
+    background-color: #9b5151;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+main #leftDiv{    
+    background-color: aliceblue;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+main #rightDiv{    
+    background-color: aliceblue;
+    width: 40%;
+    border-left: 3px solid cadetblue;
+    
+}
+canvas{
+     border: 1px solid cadetblue;
+     border-radius: 1vh; 
+     background-color: white;
+    }
+
+#messageBox{
+        padding: 0.75rem 1.25rem;
+        border: 0.1rem solid cadetblue;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        background-color: white;
+        color: slateblue;
+        min-height: 2.5rem; /* Ensure consistent height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+}
+
+#messageBox:hover{
+    cursor:default;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.controls button{
+    padding: 0.6rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    color: slateblue;
+    font-weight: bold;
+    border-color: cadetblue;
+    border-radius: 0.3rem;
+}
+
+.controls button:hover{
+    cursor: pointer;
+}
+
+#rightDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+}
+
+#rightDiv{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#rightDiv #sortName {
+
+    padding: 0.6rem;
+    color: slateblue;
+    font-weight: bold;
+    border-color: cadetblue;
+    border-radius: 0.3rem;
+
+}
+
+#rightDiv .algo{
+    height: 60%;
+    width: 80%;
+    color: aliceblue;
+    background-color: cadetblue;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 4vh;
+}
+
+#rightDiv .algo:hover{
+    cursor: pointer;
+}
+
+#rightDiv .options{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: slateblue;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#rightDiv .options #speed{
+    color: slateblue;
+    font-size: medium;
+    font-weight:600;
+}
+
+#rightDiv .options #numElements{
+    color: slateblue;
+    font-size: medium;
+    font-weight:600;
+}
+
